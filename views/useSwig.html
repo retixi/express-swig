@@ -1,0 +1,32 @@
+{%extends 'users.html'%}
+
+{%block swig%}
+  ^<br>
+<h1>引入模版</h1>
+
+
+<h1>变量</h1>
+{{name1}}
+{{name2}}
+
+<h1>循环取数组</h1>
+{%for each in nums%}
+{{each}}<br>
+{%endfor%}
+
+<h1>循环判断取数组</h1>
+{%for each in nums%}
+    {%if each>=3%}
+        {{each}}<br>
+    {%endif%}
+{%endfor%}
+<h1>取json</h1>
+{{json.name}}<br>
+{{json.sex}}<br>
+{{json.pwd}}<br><br><br>
+
+<a href="http://www.cnblogs.com/elementstorm/p/3142644.html">还有更多</a>
+{%endblock%}
+
+
+
