@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('users.html',{names:'ttx'});
+  res.render('users.html');
 });
 
 module.exports = router;

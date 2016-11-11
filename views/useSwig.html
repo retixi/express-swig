@@ -23,7 +23,18 @@
 <h1>取json</h1>
 {{json.name}}<br>
 {{json.sex}}<br>
-{{json.pwd}}<br><br><br>
+{{json.pwd}}<br>
+
+<h1>循环取json</h1>
+{%for each in json%}
+{{each}}<br>
+{%endfor%}
+
+<h1>循环取json数组键值</h1>
+{%for each in jsons%}
+{{each.name}}<br>
+{%endfor%}
+<br><br>
 
 <a href="http://www.cnblogs.com/elementstorm/p/3142644.html">还有更多</a>
 {%endblock%}

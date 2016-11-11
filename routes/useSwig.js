@@ -10,9 +10,16 @@ router.get('/', function(req, res, next) {
         name1:'aaa',
         name2:'bbb',
         nums:[1,2,3,4,5],
-        json:{name:'rtx',
+        json:{
+            name:'rtx',
             sex:'male',
-            pwd:'kldjdorgiweajfsdlfjsdfjesfosdjfldsjfdslj'}
+            pwd:'kldjdorgiweajfsdlfjsdfjesfosdjfldsjfdslj',
+            age:36,
+            address:'郑州'},
+        jsons:[{name:'tom',age:20},
+            {name:'jack',age:24},
+            {name:'mary',age:20},
+        ]
 
     });
 });
