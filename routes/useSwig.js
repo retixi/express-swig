@@ -19,9 +19,10 @@ router.get('/', function(req, res, next) {
         jsons:[{name:'tom',age:20},
             {name:'jack',age:24},
             {name:'mary',age:20},
-        ]
-
+        ],
+        page:'useswig'
     });
+    console.log(req.body)
 });
 
 module.exports = router;

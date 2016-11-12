@@ -1,10 +1,9 @@
 {%extends 'users.html'%}
 
 {%block swig%}
-  ^<br>
-<h1>引入模版</h1>
+<h2>^引入模版</h2>
 
-
+<div>
 <h1>变量</h1>
 {{name1}}
 {{name2}}
@@ -35,8 +34,10 @@
 {{each.name}}<br>
 {%endfor%}
 <br><br>
+{{url}}
 
 <a href="http://www.cnblogs.com/elementstorm/p/3142644.html">还有更多</a>
+</div>
 {%endblock%}
 
 
